@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 3px solid #d4af37;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #d4af37;
+}
+
+.cta {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.countdown {
+    font-size: 2rem;
+    color: #d4af37;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #d4af37;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b58928;
+}
+
+
+.about{
+    margin: 20px 0;
+    text-align: center;
+}
+.why{
+    margin: 20px 0;
+    text-align: center;
+}
+.purchase{
+    margin: 20px 0;
+    text-align: center;
+}
+.why-content{
+    margin: 20px 0;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.btn-buy {
+    background-color: #d4af37;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn-buy:hover {
+    background-color: #b58928;
+}
+/* Estilos para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+    }
+
+    .btn, .btn-buy {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .countdown {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 100%; /* Para ajustar a imagem ao tamanho da tela */
+        height: auto;
+    }
+}
+
+/* Estilos para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta {
+        font-size: 0.9rem;
+    }
+
+    .countdown {
+        font-size: 1.2rem;
+    }
+
+    .btn, .btn-buy {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+.about-content {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.author-image {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Isso cria uma imagem circular. Se não quiser, pode remover essa linha */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Em telas pequenas, coloca a imagem e o texto um em cima do outro */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .author-image {
+        width: 200px; /* Diminui o tamanho da imagem em telas menores */
+    }
+}
+.why-content {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre o conteúdo e a imagem */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    gap: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.pack-image {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 10px; /* Se quiser deixar as bordas arredondadas */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .why-content {
+        flex-direction: column; /* Em telas pequenas, coloca a imagem e o texto um em cima do outro */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .pack-image {
+        width: 100%; /* Aumenta a largura da imagem para se ajustar à tela */
+        max-width: 400px; /* Controla o tamanho máximo da imagem */
+    }
+}
+.why-content {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre o conteúdo e a imagem */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    gap: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.pack-image {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 10px; /* Se quiser deixar as bordas arredondadas */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .why-content {
+        flex-direction: column; /* Em telas pequenas, coloca a imagem e o texto um em cima do outro */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .pack-image {
+        width: 50%; /* Aumenta a largura da imagem para se ajustar à tela */
+        max-width: 350px; /* Controla o tamanho máximo da imagem */
+    }
+}
+/* Caixa de Promoção */
+.promotion-box {
+    background-color: #000; /* Fundo preto para combinar com a página */
+    border: 3px solid #f1c40f; /* Borda dourada */
+    padding: 50px;
+    text-align: center;
+    width: 400px; /* Ajuste a largura conforme necessário */
+    margin: 0 auto 30px; /* Centraliza a caixa e adiciona espaço inferior */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.exclusive-offer {
+    font-size: 1.5rem; /* Tamanho da fonte padrão */
+    color: #f1c40f; /* Cor dourada */
+}
+
+.old-price {
+    text-decoration: line-through; /* Risco no preço antigo */
+    color: #e74c3c; /* Cor vermelha para o preço antigo */
+    margin-right: 20px; /* Espaço entre o preço antigo e o novo */
+    text-align: center;
+}
+
+.new-price {
+    color: #2ecc71; /* Cor verde para o preço com desconto */
+    font-size: 2.5rem; /* Tamanho maior para destacar o valor */
+    font-weight: bold;
+}
+.btn-buy {
+    display: inline-block;
+    background-color: #f1c40f; /* Cor de fundo dourada */
+    color: #000; /* Cor do texto preto */
+    padding: 15px 30px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buy:hover {
+    background-color: #d4af37; /* Cor dourada mais escura no hover */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .promotion-box {
+        width: 100%; /* Faz a caixa ocupar toda a largura da tela em dispositivos menores */
+        max-width: 400px; /* Limita a largura da caixa em telas menores */
+    }
+
+    .new-price {
+        font-size: 1.8rem; /* Ajusta o tamanho do preço em dispositivos menores */
+    }
+}
